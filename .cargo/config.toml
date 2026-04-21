@@ -1,8 +1,2 @@
 [target.x86_64-pc-windows-msvc]
-linker = "clang"
-
-rustflags = [
-  "-C", "link-arg=/LIBPATH:$XWIN_CACHE_DIR/crt/lib/x86_64",
-  "-C", "link-arg=/LIBPATH:$XWIN_CACHE_DIR/sdk/lib/um/x86_64",
-  "-C", "link-arg=/LIBPATH:$XWIN_CACHE_DIR/sdk/lib/ucrt/x86_64",
-]
+linker = "link.exe"
